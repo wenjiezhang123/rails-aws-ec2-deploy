@@ -31,6 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'figaro'
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
+gem 'pg'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -47,7 +50,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false
-  gem 'capistrano-bundler', require: false
+  gem 'capistrano-bundler', require: true
   gem 'capistrano-rvm'
 end
 
