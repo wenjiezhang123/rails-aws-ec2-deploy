@@ -52,6 +52,7 @@ group :development do
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: true
   gem 'capistrano-rvm'
+  #gem 'capistrano-terraform', '~> 1.0' # the meaty bits of this plugin - 1.X to ensure you always have the best available
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

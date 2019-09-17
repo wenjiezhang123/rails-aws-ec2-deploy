@@ -59,4 +59,15 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-server '52.38.31.232', user: 'deploy', roles: %w{web app db}
+
+
+
+# capistrano-without-terraform
+# ============================
+# server '52.38.31.232', user: 'deploy', roles: %w{web app db}
+
+
+
+# capistrano-terraform
+# ====================
+role :terraform,  %w{localhost} # role syntax, this one making localhost the terraform agent
