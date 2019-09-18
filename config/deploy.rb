@@ -61,8 +61,8 @@ set :puma_preload_app, false
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-set :terraform_root, "infra"
-append :terraform_var_file, 'common.tfvars'
+# set :terraform_root, "infra"
+# append :terraform_var_file, 'common.tfvars'
 terraform :my_terraform_action, after_publish: true
 set :terraform_deploy, false
-terraform :my_terraform, path: 'directory/path', deploy: false
+terraform :my_terraform, deploy: false

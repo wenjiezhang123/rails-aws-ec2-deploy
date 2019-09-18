@@ -70,4 +70,4 @@
 
 # capistrano-terraform
 # ====================
-role :terraform,  %w{localhost} # role syntax, this one making localhost the terraform agent
+server '52.38.31.232', user: 'wzhang', roles: %w{terraform}
